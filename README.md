@@ -1,4 +1,6 @@
-# SannaFullStack
+# FullStack
+
+Avoimen yliopiston nettikurssi FullStack vuosi 2019.
 
 ## Viikot
 
