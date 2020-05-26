@@ -1,50 +1,10 @@
 import React, { useState } from 'react'
 
-const Person = ({name, number}) => {
-  return (
-<li>{name} puh. {number}</li>
-  )
-}
-
-const Filter = ({persons, handleFilterChange, newFilter}) => {
-  if (newFilter === '') {
-    return (
-      <div>
-      <p>Rajaa käyttäjiä:</p>
-      <input value={newFilter} onChange={handleFilterChange} />
-      
-    </div>
-    )}
-  const rajaus = persons.filter(p => p.name.includes(newFilter)).map(f => 
-  <Person key={f.name} name={f.name} number={f.number} />)
-  return (
-    <div>
-      <p>Rajaa käyttäjiä:</p>
-      <input value={newFilter} onChange={handleFilterChange} />
-    <ul>
-      {rajaus}
-    </ul>
-    </div>
+import Filter from './components/Filter'
+import Persons from './components/Persons'
 
 
-  )
-}
 
-const Persons = ({persons}) => {
-  const rows = () => persons.map(p =>
-    <Person
-    key={p.name}
-    name={p.name}
-    number={p.number}
-    />
-    )
-  return (
-    <ul>
-    {rows()}
-  </ul>
-  )
-
-}
 
 const App = () => {
   const [ persons, setPersons] = useState([
