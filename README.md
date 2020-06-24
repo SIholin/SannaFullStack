@@ -6,4 +6,5 @@ Avoimen yliopiston nettikurssi FullStack vuosi 2020.
 
 + [Osa 0](https://github.com/SIholin/SannaFullStack/tree/master/vko0)
 + [Osa 1](https://github.com/SIholin/SannaFullStack/tree/master/osa1)
++ [Osa 2](https://github.com/SIholin/SannaFullStack/tree/master/osa2)
 
